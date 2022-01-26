@@ -30,15 +30,6 @@ const Weather = () => {
                     
                 </div>
             </div>
-            {/* {
-                records.map((e)=>{
-                    return(
-                        <div key={e.id}>
-                            <h1>{e.city}</h1>
-                        </div>
-                    )
-                })
-            } */}
         </>
     );
 }
