@@ -7,7 +7,7 @@ const Weather = () => {
         setCity(e.target.value)
     }
     const handleSumbit =(e) => {
-        
+        const 
     }
     return (
         <>
