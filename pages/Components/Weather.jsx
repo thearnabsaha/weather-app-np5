@@ -8,7 +8,7 @@ const Weather = () => {
     const handleSumbit =(e) => {
         e.preventDefault()
         if(city){
-            
+
         }else{
             alert("type the city")
         }
@@ -23,10 +23,11 @@ const Weather = () => {
                         <button type="submit"><MdSearch/></button>
                     </form>
                     <div className="weatherDetails">
-                        <h1>Pune,In</h1>
+                        <h1>{city},In</h1>
                         <h2>23.4&#176; Cel</h2>
                         <h3>Min-18&#176; Cel | Max-30&#176; Cel</h3>
                     </div>
+                    
                 </div>
             </div>
             {/* {
