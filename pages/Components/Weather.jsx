@@ -9,6 +9,7 @@ const Weather = () => {
         <>
             <form action="">
                 <input type="search" value={city} onChange={handleChange}/>
+                <button type="submit"></button>
             </form>
         </>
     );
