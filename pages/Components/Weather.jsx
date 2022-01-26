@@ -2,14 +2,18 @@ import { useState } from "react";
 import { MdSearch } from "react-icons/md";
 const Weather = () => {
     const [city, setCity] = useState("");
+    const [records, setRecords] = useState([]);
     const handleChange=(e) => {
         setCity(e.target.value)
+    }
+    const handleSumbit =(e) => {
+        
     }
     return (
         <>
             <div className="container">
                 <div className="WeatherCard">
-                    <form action="" className="searchbar">
+                    <form action="" className="searchbar" onSubmit={handleSumbit}>
                         <input type="search" value={city} onChange={handleChange}/>
                         <button type="submit"><MdSearch/></button>
                     </form>
