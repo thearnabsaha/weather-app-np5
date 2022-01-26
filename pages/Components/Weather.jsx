@@ -2,17 +2,13 @@ import { useState } from "react";
 import { MdSearch } from "react-icons/md";
 const Weather = () => {
     const [city, setCity] = useState("");
-    const [records, setRecords] = useState([]);
     const handleChange=(e) => {
         setCity(e.target.value)
     }
     const handleSumbit =(e) => {
         e.preventDefault()
         if(city){
-            const newRecord = {city:city,id:new Date().getTime()}
-            setRecords([...records,newRecord])
-            console.log(city);
-            console.log(records);
+            
         }else{
             alert("type the city")
         }
@@ -33,7 +29,7 @@ const Weather = () => {
                     </div>
                 </div>
             </div>
-            {
+            {/* {
                 records.map((e)=>{
                     return(
                         <div key={e.id}>
@@ -41,7 +37,7 @@ const Weather = () => {
                         </div>
                     )
                 })
-            }
+            } */}
         </>
     );
 }
