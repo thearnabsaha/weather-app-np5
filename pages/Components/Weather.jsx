@@ -9,8 +9,9 @@ const Weather = () => {
     const handleSumbit =(e) => {
         e.preventDefault()
         if(city){
-            const newRecord = {...records,id:new Date().getTime()}
+            const newRecord = {city:city,id:new Date().getTime()}
             setRecords([...records,newRecord])
+            console.log(city);
             console.log(records);
         }else{
             alert("type the city")
