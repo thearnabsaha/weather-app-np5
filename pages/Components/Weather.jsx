@@ -11,6 +11,7 @@ const Weather = () => {
         if(city){
             const newRecord = {...records,id:new Date().getTime()}
             setRecords([...records,newRecord])
+            console.log(records);
         }else{
             alert("type the city")
         }
