@@ -7,10 +7,19 @@ const Weather = () => {
     }
     return (
         <>
-            <form action="">
-                <input type="search" value={city} onChange={handleChange}/>
-                <button type="submit"><MdSearch/></button>
-            </form>
+            <div className="container">
+                <div className="WeatherCard">
+                    <form action="" className="searchbar">
+                        <input type="search" value={city} onChange={handleChange}/>
+                        <button type="submit"><MdSearch/></button>
+                    </form>
+                    <div className="weatherDetails">
+                        <h1>Pune</h1>
+                        <h2>23.4&#176; Cel</h2>
+                        <h3></h3>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
