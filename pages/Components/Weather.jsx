@@ -7,7 +7,14 @@ const Weather = () => {
         setCity(e.target.value)
     }
     const handleSumbit =(e) => {
-        const 
+        e.preventDefault()
+        if(city){
+            const newRecord = {...records,id:new Date().getTime()}
+            setRecords([...records,newRecord])
+        }else{
+            alert("type the city")
+        }
+        setCity("")
     }
     return (
         <>
@@ -24,6 +31,15 @@ const Weather = () => {
                     </div>
                 </div>
             </div>
+            {
+                records.map((e)=>{
+                    return(
+                        <div key={e.id}>
+                            <h1>{e.city}</h1>
+                        </div>
+                    )
+                })
+            }
         </>
     );
 }
