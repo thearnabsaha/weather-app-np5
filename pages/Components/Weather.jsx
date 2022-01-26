@@ -1,7 +1,15 @@
+import { useState } from "react";
+
 const Weather = () => {
+    const [city, setCity] = useState("");
+    const handleChange=(e) => {
+        setCity(e.target.value)
+    }
     return (
         <>
-            <input type="search" />
+            <form action="">
+                <input type="search" value={city} onChange={handleChange}/>
+            </form>
         </>
     );
 }
