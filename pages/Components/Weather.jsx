@@ -8,7 +8,7 @@ const Weather = () => {
     const handleSumbit =(e) => {
         e.preventDefault()
         if(city){
-
+            
         }else{
             alert("type the city")
         }
