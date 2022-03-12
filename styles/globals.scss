@@ -49,10 +49,13 @@
       }
     }
     .weatherBox{
-      width: 60vw;
+      width: 50vw;
       height: 60vh;
       background-color: #fff;
       border-radius: 3rem;
+      .top{
+        
+      }
     }
     .icon{
       color: black;
