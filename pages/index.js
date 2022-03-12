@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Weather from './Components/Weather';
+import Weather from '../Components/Weather';
 const index = () => {
   return (
     <>

@@ -8,15 +8,40 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 //?################################### WEATHER STYLING #################################################
-.container{
-  .weatherCard{
-    form{
-      
+.main{
+  background-color: #2d3436;
+  width: 100vw;
+  height: 100vh;
+  .container{
+    margin: auto;
+    width: 40vw;
+    .searchBar{
+      text-align: center;
+      form{
+        input{
+          width: 300px;
+          height: 40px;
+          margin-top: 5rem;
+          color: #2d3436;
+          font-size: 2rem;
+          padding: 1rem;
+          &:hover{
+            background-color: rgba(255, 255, 255, 0.904);
+          }
+        }
+        button{
+          height: 39px;
+          width: 80px;
+          background-color: #00b894;
+          outline: none;
+          border: none;
+          font-size: 2rem;
+        }
+      }
     }
-    .weatherDetails{
-
-    }
+    
   }
 }
