@@ -53,19 +53,26 @@
       height: 60vh;
       background-color: #fff;
       border-radius: 3rem;
-      .icon{
+      .mainIcon{
         color: black;
+        text-align: center;
+        font-size: 12rem;
+        margin: 3rem;
       }
       .top{
         display: flex;
         .left{
           background-color: #2d3436;
+          width: 35%;
+          height: 150px;
         }
         .middle{
           background-color: #2d3436;
+          width: 35%;
         }
         .right{
           background-color: #00b894;
+          width: 30%;
         }
       }
     }

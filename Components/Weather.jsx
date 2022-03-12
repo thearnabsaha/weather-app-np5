@@ -10,7 +10,7 @@ const Weather = () => {
                         </form>
                     </div>
                     <div className="weatherBox">
-                        <div className="icon">@</div>
+                        <div className="mainIcon">@</div>
                         <div className="top">
                             <div className="left">
                                 <h1>25.31!</h1>
