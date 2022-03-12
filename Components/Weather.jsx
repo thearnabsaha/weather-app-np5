@@ -13,7 +13,7 @@ const Weather = () => {
                         <div className="mainIcon">@</div>
                         <div className="top">
                             <div className="left">
-                                <h1>25.31!</h1>
+                                <h1>25.31°</h1>
                             </div>
                             <div className="middle">
                                 <h1>Clouds</h1>
