@@ -63,9 +63,9 @@
       .top{
         display: flex;
         .left{
+          padding: 4rem 0rem;
           background-color: #2d3436;
           width: 35%;
-          height: 150px;
           display: flex;
           align-items: center;
           h1{
@@ -116,8 +116,26 @@
       .bottom{
         display: flex;
         font-size: 4rem;
-        .icon{
-          color: #00b894;
+        justify-content: center;
+        align-items: center;
+        .smBox{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 4rem;
+          width: 25%;
+          .icon{
+            color: #00b894;
+            font-size: 3rem;
+          }
+        .content{
+          p{
+            color: #2d3436;
+            font-weight: 600;
+            padding-left: 1rem;
+            font-size: 1.8rem;
+          }
+        }
         }
       }
     }
