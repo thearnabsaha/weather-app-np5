@@ -53,12 +53,21 @@
       height: 60vh;
       background-color: #fff;
       border-radius: 3rem;
-      .top{
-        
+      .icon{
+        color: black;
       }
-    }
-    .icon{
-      color: black;
+      .top{
+        display: flex;
+        .left{
+          background-color: #2d3436;
+        }
+        .middle{
+          background-color: #2d3436;
+        }
+        .right{
+          background-color: #00b894;
+        }
+      }
     }
   }
 }
