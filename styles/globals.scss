@@ -113,6 +113,13 @@
           }
         }
       }
+      .bottom{
+        display: flex;
+        font-size: 4rem;
+        .icon{
+          color: #00b894;
+        }
+      }
     }
   }
 }
