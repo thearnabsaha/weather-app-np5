@@ -53,6 +53,7 @@
       height: 60vh;
       background-color: #fff;
       border-radius: 3rem;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.685);
       .mainIcon{
         color: black;
         text-align: center;
@@ -65,10 +66,20 @@
           background-color: #2d3436;
           width: 35%;
           height: 150px;
+          display: flex;
+          align-items: center;
+          h1{
+            font-size: 5rem;
+            padding-left: 3rem;
+          }
         }
         .middle{
           background-color: #2d3436;
           width: 35%;
+          h1{
+            font-size: 5rem;
+            padding-left: 3rem;
+          }
         }
         .right{
           background-color: #00b894;
