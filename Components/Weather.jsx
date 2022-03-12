@@ -10,7 +10,7 @@ const Weather = () => {
                         </form>
                     </div>
                     <div className="weatherBox">
-                        <div className="icon"></div>
+                        <div className="icon">@</div>
                         <div className="top">
                             <div className="left">
                                 <h1>25.31!</h1>
@@ -26,28 +26,28 @@ const Weather = () => {
                         </div>
                         <div className="icon">
                             <div className="first">
-                                <div className="icon"></div>
+                                <div className="icon">@</div>
                                 <div className="content">
                                     <p>19:13 PM</p>
                                     <p>Sunset</p>
                                 </div>
                             </div>
                             <div className="second">
-                                <div className="icon"></div>
+                                <div className="icon">@</div>
                                 <div className="content">
                                     <p>82</p>
                                     <p>Humidity</p>
                                 </div>
                             </div>
                             <div className="first">
-                                <div className="icon"></div>
+                                <div className="icon">@</div>
                                 <div className="content">
                                     <p>1004 MM</p>
                                     <p>Pressure</p>
                                 </div>
                             </div>
                             <div className="first">
-                                <div className="icon"></div>
+                                <div className="icon">@</div>
                                 <div className="content">
                                     <p>4.79</p>
                                     <p>Wind</p>
