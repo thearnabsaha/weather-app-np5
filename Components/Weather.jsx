@@ -1,13 +1,23 @@
+import { useState } from "react";
+
 // api.openweathermap.org/data/2.5/weather?q={kolkata}&appid={37a5daa95bc7084635e04654911452c8}
 const Weather = ({weather}) => {
+    const [searchCity, setSearchCity] = useState("")
     console.log(weather)
+    const submitHandler=()=>{
+        try {
+            
+        } catch (error) {
+            alert(error)
+        }
+    }
     return (
         <>
             <div className="main">
                 <div className="container">
                     <div className="searchBar">
-                        <form action="">
-                            <input type="text" placeholder="Your City"/>
+                        <form onSubmit={submitHandler}>
+                            <input type="text" placeholder="Your City" value={searchCity} onChange={(e)=>{setSearchCity(e.target.value)}}/>
                             <button type="submit">Search</button>
                         </form>
                     </div>
@@ -65,7 +75,7 @@ const Weather = ({weather}) => {
 
 export default Weather;
 export const getStaticProps = async () => {
-    const res = await fetch("api.openweathermap.org/data/2.5/weather?q=kolkata&appid=37a5daa95bc7084635e04654911452c8")
+    const res = await fetch(`api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=37a5daa95bc7084635e04654911452c8`)
     const data = await res.json()
     return {
         props:{
