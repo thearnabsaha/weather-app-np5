@@ -5,11 +5,13 @@ const Weather = ({data}) => {
         e.preventDefault()
         try {
             console.log(searchCity);
+            console.log(data);
+            setSearchCity("")
+            // console.log(searchCity);
         } catch (error) {
             alert(error)
         }
     }
-    console.log(data);
     return (
         <>
             <div className="main">
