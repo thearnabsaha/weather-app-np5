@@ -1,22 +1,16 @@
 import { useEffect, useState } from "react";
-
-// api.openweathermap.org/data/2.5/weather?q={kolkata}&appid={37a5daa95bc7084635e04654911452c8}
-const Weather = () => {
+const Weather = ({data}) => {
     const [searchCity, setSearchCity] = useState("kolkata")
     const submitHandler=async(e)=>{
         e.preventDefault()
         try {
-            // const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=37a5daa95bc7084635e04654911452c8`)
-            // const data = await res.json()
+
             console.log(searchCity);
-            // console.log(data)
         } catch (error) {
             alert(error)
         }
     }
-    // useEffect(() => {
-    //     submitHandler()
-    // }, [])
+    console.log(data);
     return (
         <>
             <div className="main">
