@@ -1,7 +1,7 @@
 import {useState } from "react";
 const Weather = ({data}) => {
     const [searchCity, setSearchCity] = useState("kolkata")
-    const submitHandler=async(e)=>{
+    const submitHandler=(e)=>{
         e.preventDefault()
         try {
             console.log(searchCity);
