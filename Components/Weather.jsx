@@ -1,16 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // api.openweathermap.org/data/2.5/weather?q={kolkata}&appid={37a5daa95bc7084635e04654911452c8}
-const Weather = ({weather}) => {
-    const [searchCity, setSearchCity] = useState("")
-    console.log(weather)
-    const submitHandler=()=>{
+const Weather = () => {
+    const [searchCity, setSearchCity] = useState("kolkata")
+    const submitHandler=async(e)=>{
+        e.preventDefault()
         try {
-            
+            // const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=37a5daa95bc7084635e04654911452c8`)
+            // const data = await res.json()
+            console.log(searchCity);
+            // console.log(data)
         } catch (error) {
             alert(error)
         }
     }
+    // useEffect(() => {
+    //     submitHandler()
+    // }, [])
     return (
         <>
             <div className="main">
@@ -74,12 +80,5 @@ const Weather = ({weather}) => {
 }
 
 export default Weather;
-export const getStaticProps = async () => {
-    const res = await fetch(`api.openweathermap.org/data/2.5/weather?q=${searchCity}&appid=37a5daa95bc7084635e04654911452c8`)
-    const data = await res.json()
-    return {
-        props:{
-            weather:data,
-        }
-    }
-}
+
+
