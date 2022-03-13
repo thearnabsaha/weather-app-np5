@@ -1,4 +1,6 @@
-const Weather = () => {
+// api.openweathermap.org/data/2.5/weather?q={kolkata}&appid={37a5daa95bc7084635e04654911452c8}
+const Weather = ({weather}) => {
+    console.log(weather)
     return (
         <>
             <div className="main">
@@ -20,8 +22,8 @@ const Weather = () => {
                                 <p>pune,IN</p>
                             </div>
                             <div className="right">
-                                <h1>9/2/2022</h1>
-                                <p>3:44:05 PM</p>
+                                <h1>{new Date().toLocaleDateString()}</h1>
+                                <p>{new Date().toLocaleTimeString()}</p>
                             </div>
                         </div>
                         <div className="bottom">
@@ -62,3 +64,12 @@ const Weather = () => {
 }
 
 export default Weather;
+export const getStaticProps = async () => {
+    const res = await fetch("api.openweathermap.org/data/2.5/weather?q=kolkata&appid=37a5daa95bc7084635e04654911452c8")
+    const data = await res.json()
+    return {
+        props:{
+            weather:data,
+        }
+    }
+}
