@@ -1,5 +1,5 @@
 import {useState } from "react";
-const Weather = ({data}) => {
+const Weather = ({data}) => {    
     const [searchCity, setSearchCity] = useState("kolkata")
     const submitHandler=(e)=>{
         e.preventDefault()
@@ -7,7 +7,6 @@ const Weather = ({data}) => {
             console.log(searchCity);
             console.log(data);
             setSearchCity("")
-            // console.log(searchCity);
         } catch (error) {
             alert(error)
         }
